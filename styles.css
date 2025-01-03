@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.header {
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tombol Kembali ke Awal */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background-color: #555;
+}
+/* Section Background Colors */
+#about {
+  background-color: #f0f8ff;
+  background-image: url("ultra-hd-wazf67lzyh5q7k32.jpg");
+  background-size: cover;
+  color: #333;
+  padding: 50px 0;
+}
+
+#projects {
+  background-color: #ffebcd;
+  background-image: url("images (3).jpeg");
+  background-size: cover;
+  color: #333;
+  padding: 50px 0;
+}
+
+#experience {
+  background-color: #e6e6fa;
+  background-image: url("c3uhsgo1vx541.webp");
+  background-size: cover;
+  color: #333;
+  padding: 50px 0;
+}
+
+#skills {
+  background-color: #ffe4e1;
+  background-image: url("painting-mountain-lake-with-mountain-background_188544-9126.avif");
+  background-size: cover;
+  color: #333;
+  padding: 50px 0;
+}
+
+#education {
+  background-color: #fafad2;
+  background-image: url("stunning-urban-cityscape-in-4k-ultra-hd-resolution-w8g1fcdy85yvp8u8.jpg");
+  background-size: cover;
+  color: #333;
+  padding: 50px 0;
+}
+
+#contact {
+  background-color: #f5f5dc;
+  background-image: url("images.jpeg");
+  background-size: cover;
+  color: #333;
+  padding: 50px 0;
+}
+
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.nav-ul-li {
+  margin: 0 15px;
+}
+
+.nav-ul-li-a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.about,
+.projects,
+.contact {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  background: #f4f4f4;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  width: 30%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+  width: 100%;
+  max-width: 400px;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}

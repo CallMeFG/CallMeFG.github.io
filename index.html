@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Animation for Header Text */
+      .animated-header {
+        font-size: 2.5rem;
+        animation: fadeIn 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0.5;
+          transform: translateY(-10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Hover Animation for Navigation Menu */
+      .nav-links li a {
+        text-decoration: none;
+        color: black;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      .nav-links li a:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header hidden">
+      <div>
+        <h1 class="animated-header">My Portofolio <br>Fathur Rizky Assani</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" class="about hidden">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Selamat datang semua di portofolio milik saya. perkenalkan saya fathur rizky assani. sekarang sedang menempuh pendidikan s1
+          di politeknik caltex riau sejak 2024.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects hidden">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <h3>Ex Project 1</h3>
+            <p>Description...</p>
+          </div>
+          <div class="project-item">
+            <h3>Ex roject 2</h3>
+            <p>Description...</p>
+          </div>
+          <div class="project-item">
+            <h3>Ex Project 3</h3>
+            <p>Description...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience hidden">
+      <div class="container">
+        <h2>Experience</h2>
+        <p>
+          Divisi Pelatihan Dan Pengembangan CSIRT (2024)
+        </p>
+        <p>
+          Bagian Bahasa di orgnasasi pondok pesantren Darel Hikmah (2023)
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills hidden">
+      <div class="container">
+        <h2>Skills</h2>
+        <h3>Hard Skills</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Database (MySQL)</li>
+        </ul>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Problem-Solving</li>
+          <li>Team Collaboration</li>
+          <li>Time Management</li>
+          <li>Critical Thinking</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="education hidden">
+      <div class="container">
+        <h2>Education</h2>
+        <p>
+          MA di Pondok Pesantren Darel Hikmah (2021-2024)
+        </p>
+        <p>
+          MTs di Pondok Pesantren Darel Hikmah (2018-2021)</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact hidden">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <button id="backToTop">🔝</button>
+
+    <footer class="footer hidden">
+      <div>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js">
+    </script>
+  </body>
+</html>
